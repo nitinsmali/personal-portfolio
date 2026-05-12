@@ -45,7 +45,7 @@ body::before {
 .page-shell {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 24px 0 48px;
+  padding: 18px 0 30px;
 }
 
 .topbar {
@@ -55,8 +55,8 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 18px;
-  margin-bottom: 36px;
+  padding: 12px 16px;
+  margin-bottom: 26px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255, 249, 241, 0.8);
@@ -88,7 +88,7 @@ body::before {
 }
 
 section {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .hero,
@@ -98,7 +98,7 @@ section {
 .experience,
 .contact-panel {
   border: 1px solid var(--line);
-  border-radius: 36px;
+  border-radius: 28px;
   background: var(--surface);
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow);
@@ -106,10 +106,10 @@ section {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.5fr 0.9fr;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.85fr);
+  gap: 20px;
   align-items: stretch;
-  padding: 52px;
+  padding: 32px;
 }
 
 .eyebrow {
@@ -162,23 +162,23 @@ h1 span {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 30px;
+  gap: 12px;
+  margin-top: 22px;
 }
 
 .hero-highlights {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 24px;
+  gap: 8px;
+  margin-top: 18px;
 }
 
 .hero-highlights span {
-  padding: 9px 14px;
+  padding: 8px 12px;
   border-radius: 999px;
   background: rgba(29, 27, 23, 0.06);
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 500;
 }
 
@@ -186,7 +186,7 @@ h1 span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 20px;
+  padding: 12px 18px;
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
@@ -204,7 +204,7 @@ h1 span {
 
 .hero-card {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .metric,
@@ -213,9 +213,11 @@ h1 span {
 .project-card,
 .certificate-card,
 .timeline-item {
-  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: 20px;
   background: var(--surface-strong);
 }
 
@@ -223,9 +225,9 @@ h1 span {
 .project-type,
 .timeline-year {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -235,23 +237,23 @@ h1 span {
 .certificates,
 .experience,
 .contact-panel {
-  padding: 38px;
+  padding: 26px;
 }
 
 .about-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-  gap: 18px;
+  gap: 14px;
   align-items: stretch;
 }
 
 .about-photo-card {
   display: grid;
-  gap: 14px;
+  gap: 10px;
   margin: 0;
-  padding: 18px;
+  padding: 14px;
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: 20px;
   background: linear-gradient(180deg, rgba(255, 174, 73, 0.16), rgba(255, 249, 241, 0.95));
 }
 
@@ -259,15 +261,15 @@ h1 span {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 16px;
   border: 1px solid rgba(29, 27, 23, 0.08);
   background: #f4e9d9;
 }
 
 .section-heading {
   display: grid;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: 4px;
+  margin-bottom: 18px;
 }
 
 h2 {
@@ -278,50 +280,44 @@ h2 {
 }
 
 .projects {
-  padding: 12px 0 8px;
+  padding: 6px 0 4px;
 }
 
 .profiles,
 .certificates {
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .profile-grid,
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
 }
 
 .profile-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .certificate-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.project-card {
-  min-height: 280px;
+  gap: 14px;
 }
 
 .project-card h3,
 .profile-card h3,
 .certificate-card h3,
 .timeline-item h3 {
-  margin-bottom: 10px;
-  font-size: 1.45rem;
+  margin-bottom: 8px;
+  font-size: 1.28rem;
 }
 
 .profile-card {
-  min-height: 240px;
   background: linear-gradient(180deg, rgba(141, 70, 40, 0.12), rgba(255, 249, 241, 0.98));
 }
 
 .certificate-card {
-  min-height: 240px;
   background: linear-gradient(180deg, rgba(105, 200, 192, 0.12), rgba(255, 249, 241, 0.98));
 }
 
@@ -330,12 +326,12 @@ h2 {
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  margin-bottom: 16px;
-  padding: 8px 12px;
+  margin-bottom: 12px;
+  padding: 7px 11px;
   border-radius: 999px;
   background: rgba(29, 27, 23, 0.07);
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -367,49 +363,67 @@ h2 {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   padding: 0;
-  margin: 22px 0 0;
+  margin: 20px 0 0;
   list-style: none;
 }
 
 .tags li {
-  padding: 8px 12px;
+  padding: 7px 11px;
   border-radius: 999px;
   background: rgba(29, 27, 23, 0.06);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   padding: 0;
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   list-style: none;
 }
 
 .skills-list li {
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 999px;
   background: rgba(141, 70, 40, 0.08);
   color: var(--text);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 500;
 }
 
 .project-link {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   width: fit-content;
   margin-top: 22px;
-  padding: 11px 16px;
+  padding: 10px 14px;
   border: 1px solid rgba(29, 27, 23, 0.12);
   border-radius: 999px;
   color: var(--text);
   text-decoration: none;
   font-weight: 700;
+  font-size: 0.92rem;
   background: rgba(255, 249, 241, 0.72);
+}
+
+.certificate-card .project-link,
+.profile-card .project-link,
+.project-card .project-link {
+  margin-top: auto;
+}
+
+.project-card .project-link {
+  margin-top: 26px;
+}
+
+.project-link-muted {
+  opacity: 0.7;
+  cursor: default;
+  pointer-events: none;
 }
 
 .project-link:hover,
@@ -421,32 +435,33 @@ h2 {
 
 .timeline {
   display: grid;
-  gap: 16px;
+  gap: 12px;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 18px;
+  grid-template-columns: 140px 1fr;
+  gap: 14px;
 }
 
 .contact-panel {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 24px;
+  gap: 18px;
   align-items: center;
 }
 
 .contact-links {
   display: grid;
-  gap: 14px;
+  gap: 10px;
   justify-items: start;
 }
 
 .contact-links a {
   padding-bottom: 4px;
   border-bottom: 1px solid rgba(29, 27, 23, 0.2);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
+  overflow-wrap: anywhere;
 }
 
 .reveal {
@@ -461,7 +476,6 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .topbar,
   .hero,
   .about-layout,
   .contact-panel,
@@ -470,12 +484,15 @@ h2 {
   }
 
   .topbar {
+    top: 10px;
     border-radius: 28px;
+    align-items: flex-start;
   }
 
   .nav {
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 12px;
   }
 
   .hero,
@@ -484,16 +501,16 @@ h2 {
   .certificates,
   .experience,
   .contact-panel {
-    padding: 28px;
+    padding: 22px;
   }
 
-  .profile-grid,
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .project-grid,
   .certificate-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -505,9 +522,11 @@ h2 {
   .topbar {
     position: static;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
     align-items: flex-start;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+    padding: 14px;
+    border-radius: 20px;
   }
 
   h1 {
@@ -519,8 +538,42 @@ h2 {
     max-width: none;
   }
 
+  .hero {
+    padding: 22px 18px;
+    gap: 16px;
+  }
+
+  .grid-section,
+  .profiles,
+  .certificates,
+  .experience,
+  .contact-panel {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .metric,
+  .content-card,
+  .profile-card,
+  .project-card,
+  .certificate-card,
+  .timeline-item {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
   .hero-actions,
   .nav {
+    gap: 10px;
+  }
+
+  .profile-grid,
+  .project-grid,
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
     gap: 10px;
   }
 
