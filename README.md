@@ -29,18 +29,3 @@ This is my personal portfolio website developed to showcase my:
 The portfolio reflects my journey as a developer and highlights the projects and technologies I have worked on.
 
 ---
-
-# ✨ Features
-
-- 🎨 Modern Responsive UI
-- 📱 Mobile-Friendly Design
-- 🚀 Fast Performance
-- 💼 Projects Showcase Section
-- 🛠️ Skills & Technologies Section
-- 📄 Resume / About Section
-- 📫 Contact Information
-- 🌐 Live Project Links
-- 🔗 Social Media Integration
-
----
-
