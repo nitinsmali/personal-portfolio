@@ -2,8 +2,7 @@
 
 <div align="center">
 
-## 🚀 Live Demo  
-### 🔗 [View Portfolio](https://personal-portfolio-six-nu-84.vercel.app/)
+### Visit here  [View Portfolio](https://personal-portfolio-six-nu-84.vercel.app/)
 
 <br>
 
