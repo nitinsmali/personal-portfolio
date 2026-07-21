@@ -3,329 +3,400 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nitin Mali | BCA Student & Web Developer</title>
+  <title>Nitin Mali | Developer Portfolio</title>
   <meta
     name="description"
-    content="Personal portfolio for Nitin Mali, a BCA student and web developer focused on clean interfaces, practical projects, and steady growth."
+    content="Nitin Mali is a BCA student and web developer building responsive websites, practical projects, and strong development fundamentals."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
-    <header class="topbar">
-      <a class="brand" href="#home">Nitin Mali</a>
-      <nav class="nav">
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Nitin Mali home">
+        <span class="brand-mark">N</span>
+        <span class="brand-copy">
+          <strong>Nitin</strong>
+          <span>Mali</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#profiles">Profiles</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#experience">Education</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <div class="header-socials">
+        <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84a9.3 9.3 0 0 1 2.5.35c1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.47.11 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM5.6 9.74h2.67V18H5.6V9.74Zm4.35 0h2.56v1.13h.04c.36-.68 1.23-1.4 2.53-1.4 2.7 0 3.2 1.83 3.2 4.2V18H15.6v-3.84c0-.92-.02-2.1-1.25-2.1-1.25 0-1.44.99-1.44 2.03V18H9.95V9.74Z"/>
+          </svg>
+        </a>
+        <a href="mailto:malinitin.jd@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.75-.25a.25.25 0 0 0-.25.25v.2l7.5 4.7 7.5-4.7v-.2a.25.25 0 0 0-.25-.25H4.75Zm14.75 2.22-6.7 4.2a1.5 1.5 0 0 1-1.6 0l-6.7-4.2v8.53c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.72Z"/>
+          </svg>
+        </a>
+      </div>
     </header>
 
-    <main id="home">
-      <section class="hero reveal">
+    <main>
+      <section id="home" class="hero reveal">
         <div class="hero-copy">
-          <p class="eyebrow">BCA Student / Web Developer / Continuous Learner</p>
+          <p class="hero-kicker">Web Developer / BCA Student</p>
           <h1>
-            I build
-            <span>clean and practical web projects</span>
-            while growing into a fullstack developer.
+            Hi, I'm
+            <span>Nitin Mali</span>
           </h1>
+          <h2 class="hero-role">Frontend Developer and Aspiring Fullstack Builder</h2>
           <p class="hero-text">
-            I'm Nitin Mali, a BCA undergraduate student from Maharashtra who enjoys turning ideas into
-            responsive websites and beginner-friendly web applications with clear structure and thoughtful UI.
+            I build responsive websites, practical web applications, and clean digital experiences while
+            strengthening my skills in JavaScript, PHP, SQL, and problem solving.
           </p>
-          <div class="hero-highlights">
-            <span>Frontend Projects</span>
-            <span>Problem Solving</span>
-            <span>Certificates</span>
-          </div>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">See My Projects</a>
-            <a class="button button-secondary" href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">GitHub Profile</a>
+            <a class="button button-primary" href="#contact">Get In Touch</a>
+            <a class="button button-secondary" href="#projects">View My Work</a>
           </div>
-        </div>
-
-        <aside class="hero-card">
-          <div class="metric">
-            <span class="metric-label">Current Goal</span>
-            <strong>Build stronger fullstack skills through real projects, coding practice, and hands-on learning. looking for opportunities to apply my knowledge and grow as a developer.</strong>
-          </div>
-          <div class="metric">
-            <span class="metric-label">Focus</span>
-            <strong>HTML, CSS, JavaScript, PHP, SQL, and beginner-friendly problem solving. building responsive and user-friendly web applications. </strong>
-          </div>
-          <div class="metric">
-            <span class="metric-label">Based in</span>
-            <strong>Pin: 413227, Solapur, Maharashtra, India</strong>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about" class="grid-section reveal">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>Building skills through study, practice, and real projects</h2>
-        </div>
-        <div class="about-layout">
-          <div class="content-card">
-            <p>
-              Hey, my name is Nitin Mali. I am a BCA undergraduate student who enjoys learning by building.
-              My main interests are web development, clean interface design, and creating websites that feel
-              simple, modern, and easy to use.
-            </p>
-            <p>
-              I am growing through academic learning, self-practice, coding platforms, and project-based work.
-              I care about responsive layouts, readable design, and building a solid base in frontend and backend development.
-            </p>
-            <ul class="skills-list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>PHP</li>
-              <li>SQL</li>
-              <li>GitHub</li>
-            </ul>
-          </div>
-          <figure class="about-photo-card">
-            <img
-              class="about-photo"
-              src="assets/profile-placeholder.jpg"
-              alt="Portrait placeholder for Nitin Mali"
-            >
-          </figure>
-        </div>
-      </section>
-
-      <section id="profiles" class="profiles reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Coding Profiles</p>
-          <h2>Places where I build, practice, and improve</h2>
-        </div>
-        <div class="profile-grid">
-          <article class="profile-card">
-            <span class="profile-label">GitHub</span>
-            <h3>Project code and public work</h3>
-            <p>
-              Explore my repositories, project source code, and the web development work I am actively building and improving.
-            </p>
-            <a class="project-link" href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">GitHub Profile</a>
-          </article>
-
-          <article class="profile-card">
-            <span class="profile-label">LeetCode</span>
-            <h3>Problem solving and coding practice</h3>
-            <p>
-              Showcase my problem-solving skills and coding practice through LeetCode challenges and competitions.
-            </p>
-            <a class="project-link" href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer">LeetCode Profile</a>
-          </article>
-
-          <article class="profile-card">
-            <span class="profile-label">LinkedIn</span>
-            <h3>Professional profile and connections</h3>
-            <p>
-              View my professional background, education, and updates as I continue growing through projects, learning, and new opportunities.
-            </p>
-            <a class="project-link" href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">LinkedIn Profile</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="projects" class="projects reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects that reflect my learning and development journey</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card accent-sun">
-            <p class="project-type">Student project</p>
-            <h3>Portfolio Website</h3>
-            <p>
-              A personal portfolio website designed to present my profile, projects, certificates, and coding journey in a clear and professional format.
-            </p>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Responsive Design</li>
-            </ul>
-            <a class="project-link" href="https://personal-portfolio-six-nu-84.vercel.app/" target="_blank" rel="noreferrer">View Project</a>
-          </article>
-
-          <article class="project-card accent-teal">
-            <p class="project-type">Final Year Project</p>
-            <h3>Online Quiz Web Application</h3>
-            <p>
-              Built a quiz platform that improves the traditional quiz process with instant scoring, better interaction, and a smoother digital experience for users.
-            </p>
-            <ul class="tags">
-              <li>PHP</li>
-              <li>JavaScript</li>
-              <li>Login System</li>
-            </ul>
-            <a class="project-link" href="https://onlinequiz-project.xo.je/online_quiz/" target="_blank" rel="noreferrer">View Project</a>
-          </article>
-
-          <article class="project-card accent-coral">
-            <p class="project-type">Mini Project</p>
-            <h3>Tic Tac Toe Game</h3>
-            <p>
-              Developed a browser-based Tic Tac Toe game with score tracking, a CPU opponent, and a simple interface to practice logic and interaction design.
-            </p>
-            <ul class="tags">
-              <li>Game Development</li>
-              <li>UI Design</li>
-              <li>JavaScript</li>
-            </ul>
-            <a class="project-link" href="https://nitinsmali.github.io/Tic-Tac-Toe/" target="_blank" rel="noreferrer">View Project</a>
-          </article>
-
-          <article class="project-card accent-sun">
-            <p class="project-type">Practice Project</p>
-            <h3>Student Result Management UI</h3>
-            <p>
-              A concept project focused on creating a clean student result dashboard layout with organized tables, simple navigation, and mobile-friendly structure.
-            </p>
-            <ul class="tags">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Dashboard UI</li>
-            </ul>
-            <span class="project-link project-link-muted" aria-disabled="true">Project Preview Soon</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="certificates" class="certificates reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Certificates</p>
-          <h2>Certificates that support my learning journey</h2>
-        </div>
-        <div class="certificate-grid">
-          <article class="certificate-card">
-            <span class="certificate-label">Certificate 01</span>
-            <h3>Python Programming</h3>
-            <p>
-              HackerRank Python certificate showing my understanding of basic Python concepts and foundational problem-solving skills.
-            </p>
-            <a class="project-link" href="https://www.hackerrank.com/certificates/iframe/0d957c752405" target="_blank" rel="noreferrer">View Certificate</a>
-          </article>
-
-          <article class="certificate-card">
-            <span class="certificate-label">Certificate 02</span>
-            <h3>Google Data Analytics</h3>
-            <p>
-              Coursera certificate covering data analysis, visualization, spreadsheets, SQL, and practical thinking for working with data.
-            </p>
-            <a class="project-link" href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/Y4ABSF44M3RL" target="_blank" rel="noreferrer">View Certificate</a>
-          </article>
-
-          <article class="certificate-card">
-            <span class="certificate-label">Certificate 03</span>
-            <h3>Software Engineer Intern</h3>
-            <p>
-              Software Engineer Internship certificate from HackerRank, reflecting my practical experience and skills in a real-world development environment.
-            </p>
-            <a class="project-link" href="https://www.hackerrank.com/certificates/iframe/5f8808b33f1e" target="_blank" rel="noreferrer">View Certificate</a>
-          </article>
-
-          <article class="certificate-card">
-            <span class="certificate-label">Certificate 04</span>
-            <h3>Problem Solving</h3>
-            <p>
-              HackerRank Problem Solving certificate demonstrating my ability to analyze problems and implement efficient solutions using various programming paradigms.
-            </p>
-            <a class="project-link" href="https://www.hackerrank.com/certificates/iframe/7bb02b79067b" target="_blank" rel="noreferrer">View Certificate</a>
-          </article>
-
-          <article class="certificate-card">
-            <span class="certificate-label">Certificate 03</span>
-            <h3>SQL and Relational Databases 101</h3>
-            <p>
-              IBM-backed course introducing SQL queries, relational database concepts, and the basics of structured data handling.
-            </p>
-            <a class="project-link" href="https://courses.cognitiveclass.ai/certificates/81e7c115e16f4921bde1e694b112c41f" target="_blank" rel="noreferrer">View Certificate</a>
-          </article>
-
-          <article class="certificate-card">
-            <span class="certificate-label">Certificate 06</span>
-            <h3>Web Development Practice</h3>
-            <p>
-              A reserved space for a future certificate that reflects hands-on project work, responsive development, and stronger end-to-end web skills.
-            </p>
-            <span class="project-link project-link-muted" aria-disabled="true">Coming Soon</span>
-          </article>
-
-        </div>
-      </section>
-
-      <section id="experience" class="experience reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Education</p>
-          <h2>My academic background and current progress</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <span class="timeline-year">2023 - 2026</span>
-            <div>
-              <h3>BCA Undergraduate Student</h3>
-              <p>CB Khedgi's College Akkalkot, affiliated with Solapur University</p>
-              <p>
-                Pursuing a Bachelor of Computer Applications while building practical knowledge in web development,
-                programming fundamentals, and software problem solving.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-year">Learning</span>
-            <div>
-              <h3>Self-Learning and Practice</h3>
-              <p>Projects, coding platforms, and guided courses</p>
-              <p>
-                Alongside academics, I improve my skills through personal projects, online certifications,
-                GitHub practice, and coding problem solving.
-              </p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <span class="timeline-year">Current Focus</span>
-            <div>
-              <h3>Frontend to Fullstack Growth</h3>
-              <p>Building confidence through real implementation</p>
-              <p>
-                My current focus is improving JavaScript, PHP, SQL, and project structure so I can build more complete end-to-end applications.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="contact reveal">
-        <div class="contact-panel">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Have a project, role, or collaboration in mind?</h2>
-            <p>
-              I am open to internships, learning opportunities, collaborations, and roles where I can keep improving as a developer while contributing with sincerity and consistency.
-            </p>
-          </div>
-          <div class="contact-links">
-            <a href="tel:+919209306531">+91 9209306531</a>
-            <a href="mailto:malinitin.jd@gmail.com">E-Mail</a>
-            <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div class="hero-mini-links">
+            <a href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer">LeetCode</a>
             <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://leetcode.com/your-username/" target="_blank" rel="noreferrer">LeetCode</a>
+            <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:malinitin.jd@gmail.com">Email</a>
           </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-avatar-ring">
+            <img src="assets/profile-placeholder.png" alt="Portrait of Nitin Mali">
+          </div>
+          <div class="floating-badge floating-badge-right">
+            <span></span>
+            Open to internships
+          </div>
+          <div class="floating-chip floating-chip-left">JS</div>
+          <div class="floating-chip floating-chip-bottom">PHP</div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section-heading section-heading-center">
+          <p class="section-kicker">Get To Know More</p>
+          <h2>About Me</h2>
+          <span class="heading-line"></span>
+        </div>
+
+        <div class="about-grid">
+          <article class="profile-panel">
+            <div class="profile-photo">
+              <img src="assets/profile-placeholder.png" alt="Nitin Mali portrait">
+            </div>
+            <h3>Nitin Mali</h3>
+            <p>BCA Student / Web Developer</p>
+            <div class="profile-socials">
+              <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84a9.3 9.3 0 0 1 2.5.35c1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.47.11 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM5.6 9.74h2.67V18H5.6V9.74Zm4.35 0h2.56v1.13h.04c.36-.68 1.23-1.4 2.53-1.4 2.7 0 3.2 1.83 3.2 4.2V18H15.6v-3.84c0-.92-.02-2.1-1.25-2.1-1.25 0-1.44.99-1.44 2.03V18H9.95V9.74Z"/>
+                </svg>
+              </a>
+              <a href="mailto:malinitin.jd@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.75-.25a.25.25 0 0 0-.25.25v.2l7.5 4.7 7.5-4.7v-.2a.25.25 0 0 0-.25-.25H4.75Zm14.75 2.22-6.7 4.2a1.5 1.5 0 0 1-1.6 0l-6.7-4.2v8.53c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.72Z"/>
+                </svg>
+              </a>
+              <a href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer" aria-label="LeetCode">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15.4 3.5 9.3 9.6a1.5 1.5 0 0 0 0 2.12l6.1 6.1 1.41-1.42-5.04-5.03 5.04-5.04L15.4 3.5Z"/>
+                  <path d="M10.5 18.5H5.75A2.75 2.75 0 0 1 3 15.75v-7.5A2.75 2.75 0 0 1 5.75 5.5H10.5v2H5.75c-.41 0-.75.34-.75.75v7.5c0 .41.34.75.75.75H10.5v2Z"/>
+                  <path d="M11 11h10v2H11z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <div class="about-content">
+            <p>
+              I'm a passionate web developer with a strong interest in building modern and user-friendly
+              applications. As a BCA undergraduate student, I enjoy learning through real projects, coding practice,
+              and consistent self-improvement.
+            </p>
+            <p>
+              My focus is on creating clean interfaces, responsive layouts, and practical solutions with HTML,
+              CSS, JavaScript, PHP, and SQL while steadily growing into a more complete fullstack developer.
+            </p>
+
+            <div class="about-info-grid">
+              <article class="info-card">
+                <span>Name</span>
+                <strong>Nitin Mali</strong>
+              </article>
+              <article class="info-card">
+                <span>Email</span>
+                <strong>malinitin.jd@gmail.com</strong>
+              </article>
+              <article class="info-card">
+                <span>Location</span>
+                <strong>Solapur, Maharashtra, India</strong>
+              </article>
+              <article class="info-card">
+                <span>Current Focus</span>
+                <strong>Projects, DSA, and fullstack learning</strong>
+              </article>
+            </div>
+
+            <div class="stack-block">
+              <p>Tech Stack:</p>
+              <div class="stack-pills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>SQL</span>
+                <span>GitHub</span>
+                <span>LeetCode</span>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a class="button button-primary" href="mailto:malinitin.jd@gmail.com">Let's Talk</a>
+              <a class="button button-secondary" href="#projects">View Projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="section-heading section-heading-center">
+          <h2>My Skills</h2>
+          <p>A showcase of the tools and technologies I use to build practical and responsive web applications.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-html">H</div>
+            <h3>HTML5</h3>
+            <div class="skill-bar"><span style="width: 92%;"></span></div>
+            <p>92%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-css">C</div>
+            <h3>CSS3</h3>
+            <div class="skill-bar"><span style="width: 90%;"></span></div>
+            <p>90%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-js">JS</div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><span style="width: 84%;"></span></div>
+            <p>84%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-php">P</div>
+            <h3>PHP</h3>
+            <div class="skill-bar"><span style="width: 75%;"></span></div>
+            <p>75%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-sql">SQL</div>
+            <h3>SQL</h3>
+            <div class="skill-bar"><span style="width: 78%;"></span></div>
+            <p>78%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon skill-icon-git">G</div>
+            <h3>GitHub</h3>
+            <div class="skill-bar"><span style="width: 82%;"></span></div>
+            <p>82%</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="section-kicker">Recent Work</p>
+            <h2>My Projects</h2>
+          </div>
+          <p>
+            Here are some of my recent projects. Each one helped me strengthen my development skills
+            and solve a practical problem through code.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-preview preview-portfolio">
+              <span>Portfolio Website</span>
+            </div>
+            <div class="project-body">
+              <h3>Portfolio Website</h3>
+              <p>
+                A personal portfolio designed to showcase my profile, skills, projects, and contact details in a clean single-page layout.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive UI</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://personal-portfolio-six-nu-84.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-quiz">
+              <span>Online Quiz App</span>
+            </div>
+            <div class="project-body">
+              <h3>Online Quiz Web Application</h3>
+              <p>
+                A quiz platform with instant scoring, user login flow, and a better digital quiz experience built for my final year project work.
+              </p>
+              <ul class="tag-list">
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>Login System</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://onlinequiz-project.xo.je/online_quiz/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-game">
+              <span>Tic Tac Toe</span>
+            </div>
+            <div class="project-body">
+              <h3>Tic Tac Toe Game</h3>
+              <p>
+                A browser-based game with score tracking, turn logic, and a simple UI that helped me practice JavaScript interaction patterns.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript</li>
+                <li>Game Logic</li>
+                <li>UI Design</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://nitinsmali.github.io/Tic-Tac-Toe/" target="_blank" rel="noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-result">
+              <span>Result Dashboard</span>
+            </div>
+            <div class="project-body">
+              <h3>Student Result Dashboard</h3>
+              <p>
+                A concept interface for displaying student result data clearly with structured layout, simple tables, and a mobile-friendly flow.
+              </p>
+              <ul class="tag-list">
+                <li>Dashboard UI</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="project-links">
+                <span class="disabled-link">Project Preview Soon</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="section-kicker">Get In Touch</p>
+            <h2>Let's Work Together</h2>
+          </div>
+          <p>
+            Have a project in mind or want to discuss an internship, collaboration, or opportunity?
+            Feel free to reach out. I am always open to meaningful conversations and new learning experiences.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>
+              Reach out through email, GitHub, LinkedIn, phone, or LeetCode. I am happy to connect,
+              discuss work, and explore new opportunities.
+            </p>
+
+            <div class="contact-list">
+              <article>
+                <span>Email</span>
+                <a href="mailto:malinitin.jd@gmail.com">malinitin.jd@gmail.com</a>
+              </article>
+              <article>
+                <span>GitHub</span>
+                <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">github.com/nitinsmali</a>
+              </article>
+              <article>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">linkedin.com/in/nitinsmali</a>
+              </article>
+              <article>
+                <span>LeetCode</span>
+                <a href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer">leetcode.com/nitinsmali</a>
+              </article>
+              <article>
+                <span>Phone</span>
+                <a href="tel:+919209306531">+91 9209306531</a>
+              </article>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <label>
+                <span>Your Name</span>
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label>
+                <span>Email Address</span>
+                <input type="email" name="email" placeholder="you@example.com" required>
+              </label>
+            </div>
+
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="Let me know how I can help you" required>
+            </label>
+
+            <label>
+              <span>Your Message</span>
+              <textarea name="message" rows="6" placeholder="Hi Nitin, I would like to talk about..." required></textarea>
+            </label>
+
+            <button class="button button-primary button-submit" type="submit">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
