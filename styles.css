@@ -939,6 +939,22 @@ main {
   box-shadow: 0 0 0 4px rgba(39, 185, 255, 0.08);
 }
 
+@media (max-width: 1280px) {
+  .page-shell {
+    width: min(1080px, calc(100% - 28px));
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
+    gap: 30px;
+  }
+
+  .projects-grid,
+  .certifications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1100px) {
   .site-header,
   .hero,
@@ -976,6 +992,50 @@ main {
   }
 }
 
+@media (max-width: 900px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .brand {
+    justify-self: center;
+  }
+
+  .main-nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-socials {
+    justify-self: center;
+  }
+
+  .hero {
+    gap: 24px;
+  }
+
+  .hero-copy {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .section-heading-split,
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-panel {
+    justify-self: center;
+  }
+}
+
 @media (max-width: 720px) {
   .page-shell {
     width: min(100% - 20px, 1140px);
@@ -991,7 +1051,7 @@ main {
   }
 
   .main-nav {
-    gap: 8px;
+    gap: 6px 8px;
   }
 
   .main-nav a {
@@ -1019,6 +1079,11 @@ main {
     font-size: 0.96rem;
   }
 
+  .hero,
+  .section {
+    gap: 20px;
+  }
+
   .hero-avatar-ring {
     width: 272px;
     height: 272px;
@@ -1040,5 +1105,69 @@ main {
 
   .button {
     width: 100%;
+  }
+
+  .hero-actions,
+  .about-actions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    width: min(100% - 16px, 1140px);
+  }
+
+  .site-header {
+    padding: 14px 12px;
+    border-radius: 16px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    font-size: 1.3rem;
+  }
+
+  .brand-copy strong {
+    font-size: 0.96rem;
+  }
+
+  .brand-copy span {
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 4px 0;
+  }
+
+  .hero-avatar-ring {
+    width: 236px;
+    height: 236px;
+  }
+
+  .profile-photo {
+    width: 118px;
+    height: 118px;
+  }
+
+  .project-preview {
+    min-height: 168px;
+  }
+
+  .project-body,
+  .certificate-card,
+  .contact-info,
+  .contact-form,
+  .profile-panel {
+    padding: 16px;
+  }
+
+  .about-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    align-items: start;
   }
 }
