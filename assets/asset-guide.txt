@@ -1,0 +1,10 @@
+Resume:
+- Put your real resume PDF here as: assets/Nitin-Mali-CV.pdf
+
+Project screenshots:
+- assets/project-portfolio.png
+- assets/project-quiz.png
+- assets/project-tictactoe.png
+
+If you want to use the actual screenshots later, replace the preview blocks in index.html
+with <img> tags or update the project preview backgrounds in styles.css.

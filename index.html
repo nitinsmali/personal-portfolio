@@ -14,6 +14,10 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,6 +36,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -65,17 +70,11 @@
           <h2 class="hero-role">Frontend Developer and Aspiring Fullstack Builder</h2>
           <p class="hero-text">
             I build responsive websites, practical web applications, and clean digital experiences while
-            strengthening my skills in JavaScript, PHP, SQL, and problem solving.
+            strengthening my skills in JavaScript, React, Python, PHP, SQL, and problem solving.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#contact">Get In Touch</a>
             <a class="button button-secondary" href="#projects">View My Work</a>
-          </div>
-          <div class="hero-mini-links">
-            <a href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer">LeetCode</a>
-            <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="mailto:malinitin.jd@gmail.com">Email</a>
           </div>
         </div>
 
@@ -83,12 +82,9 @@
           <div class="hero-avatar-ring">
             <img src="assets/profile-placeholder.png" alt="Portrait of Nitin Mali">
           </div>
-          <div class="floating-badge floating-badge-right">
-            <span></span>
-            Open to internships
-          </div>
-          <div class="floating-chip floating-chip-left">JS</div>
-          <div class="floating-chip floating-chip-bottom">PHP</div>
+          <div class="hero-status-orb" aria-hidden="true"></div>
+          <div class="floating-chip floating-chip-left">React</div>
+          <div class="floating-chip floating-chip-bottom">Python</div>
         </div>
       </section>
 
@@ -122,13 +118,6 @@
                   <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.75-.25a.25.25 0 0 0-.25.25v.2l7.5 4.7 7.5-4.7v-.2a.25.25 0 0 0-.25-.25H4.75Zm14.75 2.22-6.7 4.2a1.5 1.5 0 0 1-1.6 0l-6.7-4.2v8.53c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.72Z"/>
                 </svg>
               </a>
-              <a href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer" aria-label="LeetCode">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M15.4 3.5 9.3 9.6a1.5 1.5 0 0 0 0 2.12l6.1 6.1 1.41-1.42-5.04-5.03 5.04-5.04L15.4 3.5Z"/>
-                  <path d="M10.5 18.5H5.75A2.75 2.75 0 0 1 3 15.75v-7.5A2.75 2.75 0 0 1 5.75 5.5H10.5v2H5.75c-.41 0-.75.34-.75.75v7.5c0 .41.34.75.75.75H10.5v2Z"/>
-                  <path d="M11 11h10v2H11z"/>
-                </svg>
-              </a>
             </div>
           </article>
 
@@ -140,7 +129,7 @@
             </p>
             <p>
               My focus is on creating clean interfaces, responsive layouts, and practical solutions with HTML,
-              CSS, JavaScript, PHP, and SQL while steadily growing into a more complete fullstack developer.
+              CSS, JavaScript, React, Python, PHP, and SQL while steadily growing into a more complete developer.
             </p>
 
             <div class="about-info-grid">
@@ -165,19 +154,25 @@
             <div class="stack-block">
               <p>Tech Stack:</p>
               <div class="stack-pills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>SQL</span>
-                <span>GitHub</span>
-                <span>LeetCode</span>
+                <span class="pill-react">React</span>
+                <span class="pill-green">JavaScript</span>
+                <span class="pill-cyan">PHP</span>
+                <span class="pill-sky">SQL</span>
+                <span class="pill-yellow">Python</span>
+                <span class="pill-violet">AI/ML</span>
               </div>
             </div>
 
             <div class="about-actions">
-              <a class="button button-primary" href="mailto:malinitin.jd@gmail.com">Let's Talk</a>
-              <a class="button button-secondary" href="#projects">View Projects</a>
+              <!-- Put your real resume PDF at assets/Nitin-Mali-CV.pdf -->
+              <a class="button button-primary button-icon" href="assets/Nitin-Mali-CV.pdf" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3a1 1 0 0 1 1 1v8.59l2.3-2.29 1.4 1.41-4.7 4.7-4.7-4.7 1.4-1.41L11 12.59V4a1 1 0 0 1 1-1Z"/>
+                  <path d="M5 17h14v4H5z"/>
+                </svg>
+                Download CV
+              </a>
+              <a class="button button-secondary" href="#contact">Let's Talk</a>
             </div>
           </div>
         </div>
@@ -186,48 +181,62 @@
       <section id="skills" class="section reveal">
         <div class="section-heading section-heading-center">
           <h2>My Skills</h2>
-          <p>A showcase of the tools and technologies I use to build practical and responsive web applications.</p>
+          <p>A showcase of the technologies and tools I use to build smooth, scalable, and responsive web applications.</p>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card">
-            <div class="skill-icon skill-icon-html">H</div>
+            <div class="skill-icon"><i class="devicon-react-original colored"></i></div>
+            <h3>React</h3>
+            <div class="skill-bar"><span style="width: 78%;"></span></div>
+            <p>78%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><span style="width: 86%;"></span></div>
+            <p>86%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="devicon-python-plain colored"></i></div>
+            <h3>Python</h3>
+            <div class="skill-bar"><span style="width: 74%;"></span></div>
+            <p>74%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="devicon-php-plain colored"></i></div>
+            <h3>PHP</h3>
+            <div class="skill-bar"><span style="width: 77%;"></span></div>
+            <p>77%</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon"><i class="devicon-html5-plain colored"></i></div>
             <h3>HTML5</h3>
             <div class="skill-bar"><span style="width: 92%;"></span></div>
             <p>92%</p>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon skill-icon-css">C</div>
+            <div class="skill-icon"><i class="devicon-css3-plain colored"></i></div>
             <h3>CSS3</h3>
             <div class="skill-bar"><span style="width: 90%;"></span></div>
             <p>90%</p>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon skill-icon-js">JS</div>
-            <h3>JavaScript</h3>
-            <div class="skill-bar"><span style="width: 84%;"></span></div>
-            <p>84%</p>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon skill-icon-php">P</div>
-            <h3>PHP</h3>
-            <div class="skill-bar"><span style="width: 75%;"></span></div>
-            <p>75%</p>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon skill-icon-sql">SQL</div>
+            <div class="skill-icon"><i class="devicon-mysql-plain colored"></i></div>
             <h3>SQL</h3>
-            <div class="skill-bar"><span style="width: 78%;"></span></div>
-            <p>78%</p>
+            <div class="skill-bar"><span style="width: 79%;"></span></div>
+            <p>79%</p>
           </article>
 
           <article class="skill-card">
-            <div class="skill-icon skill-icon-git">G</div>
-            <h3>GitHub</h3>
+            <div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+            <h3>Git / GitHub</h3>
             <div class="skill-bar"><span style="width: 82%;"></span></div>
             <p>82%</p>
           </article>
@@ -241,20 +250,21 @@
             <h2>My Projects</h2>
           </div>
           <p>
-            Here are some of my recent projects. Each one helped me strengthen my development skills
-            and solve a practical problem through code.
+            Here are some of my recent projects. Each one helped me strengthen my development skills and
+            solve a practical problem through code. You can replace each preview area later with your actual UI screenshots from the assets folder.
           </p>
         </div>
 
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-preview preview-portfolio">
-              <span>Portfolio Website</span>
+              <span>Preview 01</span>
+              <small>Add screenshot later in assets/project-portfolio.png</small>
             </div>
             <div class="project-body">
               <h3>Portfolio Website</h3>
               <p>
-                A personal portfolio designed to showcase my profile, skills, projects, and contact details in a clean single-page layout.
+                A personal portfolio website designed to showcase my profile, skills, projects, and contact information in a polished single-page format.
               </p>
               <ul class="tag-list">
                 <li>HTML</li>
@@ -269,12 +279,13 @@
 
           <article class="project-card">
             <div class="project-preview preview-quiz">
-              <span>Online Quiz App</span>
+              <span>Preview 02</span>
+              <small>Add screenshot later in assets/project-quiz.png</small>
             </div>
             <div class="project-body">
               <h3>Online Quiz Web Application</h3>
               <p>
-                A quiz platform with instant scoring, user login flow, and a better digital quiz experience built for my final year project work.
+                A final-year project focused on digital quiz management with instant scoring, smoother user interaction, and structured login-based flow.
               </p>
               <ul class="tag-list">
                 <li>PHP</li>
@@ -289,12 +300,13 @@
 
           <article class="project-card">
             <div class="project-preview preview-game">
-              <span>Tic Tac Toe</span>
+              <span>Preview 03</span>
+              <small>Add screenshot later in assets/project-tictactoe.png</small>
             </div>
             <div class="project-body">
               <h3>Tic Tac Toe Game</h3>
               <p>
-                A browser-based game with score tracking, turn logic, and a simple UI that helped me practice JavaScript interaction patterns.
+                A browser-based game with score tracking, turn logic, and a clean interface that helped me practice JavaScript interaction and game flow.
               </p>
               <ul class="tag-list">
                 <li>JavaScript</li>
@@ -306,25 +318,54 @@
               </div>
             </div>
           </article>
+        </div>
+      </section>
 
-          <article class="project-card">
-            <div class="project-preview preview-result">
-              <span>Result Dashboard</span>
-            </div>
-            <div class="project-body">
-              <h3>Student Result Dashboard</h3>
-              <p>
-                A concept interface for displaying student result data clearly with structured layout, simple tables, and a mobile-friendly flow.
-              </p>
-              <ul class="tag-list">
-                <li>Dashboard UI</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              <div class="project-links">
-                <span class="disabled-link">Project Preview Soon</span>
-              </div>
-            </div>
+      <section id="certifications" class="section reveal">
+        <div class="section-heading section-heading-split">
+          <div>
+            <p class="section-kicker">Achievements</p>
+            <h2>Certifications</h2>
+          </div>
+          <p>
+            These certifications reflect my continued learning in programming, analytics, SQL, and problem solving.
+          </p>
+        </div>
+
+        <div class="certifications-grid">
+          <article class="certificate-card">
+            <span class="certificate-label">Certificate 01</span>
+            <h3>Python Programming</h3>
+            <p>HackerRank certificate showing foundational Python knowledge and problem-solving ability.</p>
+            <a href="https://www.hackerrank.com/certificates/iframe/0d957c752405" target="_blank" rel="noreferrer">View Certificate</a>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-label">Certificate 02</span>
+            <h3>Google Data Analytics</h3>
+            <p>Coursera certification covering analytics, spreadsheets, SQL, and data-driven thinking.</p>
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/Y4ABSF44M3RL" target="_blank" rel="noreferrer">View Certificate</a>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-label">Certificate 03</span>
+            <h3>Software Engineer Intern</h3>
+            <p>HackerRank certificate reflecting practical skills and performance in a software engineering track.</p>
+            <a href="https://www.hackerrank.com/certificates/iframe/5f8808b33f1e" target="_blank" rel="noreferrer">View Certificate</a>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-label">Certificate 04</span>
+            <h3>Problem Solving</h3>
+            <p>HackerRank certificate focused on logic building, reasoning, and efficient solution design.</p>
+            <a href="https://www.hackerrank.com/certificates/iframe/7bb02b79067b" target="_blank" rel="noreferrer">View Certificate</a>
+          </article>
+
+          <article class="certificate-card">
+            <span class="certificate-label">Certificate 05</span>
+            <h3>SQL and Relational Databases 101</h3>
+            <p>IBM-backed certification introducing SQL queries, database structures, and relational concepts.</p>
+            <a href="https://courses.cognitiveclass.ai/certificates/81e7c115e16f4921bde1e694b112c41f" target="_blank" rel="noreferrer">View Certificate</a>
           </article>
         </div>
       </section>
@@ -333,7 +374,7 @@
         <div class="section-heading section-heading-split">
           <div>
             <p class="section-kicker">Get In Touch</p>
-            <h2>Let's Work Together</h2>
+            <h2>Contact</h2>
           </div>
           <p>
             Have a project in mind or want to discuss an internship, collaboration, or opportunity?
@@ -345,30 +386,80 @@
           <div class="contact-info">
             <h3>Contact Information</h3>
             <p>
-              Reach out through email, GitHub, LinkedIn, phone, or LeetCode. I am happy to connect,
-              discuss work, and explore new opportunities.
+              Reach out through email, phone, or professional platforms. The form on the right opens your mail app with the details already filled in.
             </p>
 
             <div class="contact-list">
-              <article>
-                <span>Email</span>
-                <a href="mailto:malinitin.jd@gmail.com">malinitin.jd@gmail.com</a>
+              <article class="contact-item">
+                <div class="contact-icon contact-icon-name">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-3.31 0-6 1.79-6 4v1h12v-1c0-2.21-2.69-4-6-4Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span>Name</span>
+                  <strong>Nitin Mali</strong>
+                </div>
               </article>
-              <article>
-                <span>GitHub</span>
-                <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">github.com/nitinsmali</a>
+
+              <article class="contact-item">
+                <div class="contact-icon contact-icon-mail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.75-.25a.25.25 0 0 0-.25.25v.2l7.5 4.7 7.5-4.7v-.2a.25.25 0 0 0-.25-.25H4.75Zm14.75 2.22-6.7 4.2a1.5 1.5 0 0 1-1.6 0l-6.7-4.2v8.53c0 .14.11.25.25.25h14.5c.14 0 .25-.11.25-.25V8.72Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span>Email</span>
+                  <a href="mailto:malinitin.jd@gmail.com">malinitin.jd@gmail.com</a>
+                </div>
               </article>
-              <article>
-                <span>LinkedIn</span>
-                <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">linkedin.com/in/nitinsmali</a>
+
+              <article class="contact-item">
+                <div class="contact-icon contact-icon-github">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.67.35-1.12.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84a9.3 9.3 0 0 1 2.5.35c1.9-1.32 2.74-1.05 2.74-1.05.56 1.42.21 2.47.11 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.95.68 1.92 0 1.39-.01 2.51-.01 2.85 0 .27.18.6.69.49A10.25 10.25 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span>GitHub</span>
+                  <a href="https://github.com/nitinsmali" target="_blank" rel="noreferrer">github.com/nitinsmali</a>
+                </div>
               </article>
-              <article>
-                <span>LeetCode</span>
-                <a href="https://leetcode.com/nitinsmali/" target="_blank" rel="noreferrer">leetcode.com/nitinsmali</a>
+
+              <article class="contact-item">
+                <div class="contact-icon contact-icon-linkedin">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM5.6 9.74h2.67V18H5.6V9.74Zm4.35 0h2.56v1.13h.04c.36-.68 1.23-1.4 2.53-1.4 2.7 0 3.2 1.83 3.2 4.2V18H15.6v-3.84c0-.92-.02-2.1-1.25-2.1-1.25 0-1.44.99-1.44 2.03V18H9.95V9.74Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span>LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/nitinsmali" target="_blank" rel="noreferrer">linkedin.com/in/nitinsmali</a>
+                </div>
               </article>
-              <article>
-                <span>Phone</span>
-                <a href="tel:+919209306531">+91 9209306531</a>
+
+              <article class="contact-item">
+                <div class="contact-icon contact-icon-location">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2a6.5 6.5 0 0 0-6.5 6.5c0 4.93 6.5 13.5 6.5 13.5s6.5-8.57 6.5-13.5A6.5 6.5 0 0 0 12 2Zm0 9.25a2.75 2.75 0 1 1 0-5.5 2.75 2.75 0 0 1 0 5.5Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span>Location</span>
+                  <strong>Solapur, Maharashtra, India</strong>
+                </div>
+              </article>
+
+              <article class="contact-item">
+                <div class="contact-icon contact-icon-phone">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6.62 10.79a15.54 15.54 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.11.37 2.3.56 3.57.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.27.19 2.46.56 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span>Phone</span>
+                  <a href="tel:+919209306531">+91 9209306531</a>
+                </div>
               </article>
             </div>
           </div>
