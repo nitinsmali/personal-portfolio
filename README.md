@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### Visit here  [View Portfolio](https://personal-portfolio-six-nu-84.vercel.app/)
+### Visit here  [View Portfolio](https://nitinsmali.vercel.app/)
 
 <br>
 
