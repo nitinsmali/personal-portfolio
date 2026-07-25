@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### Visit here  [View Portfolio](https://nitinsmali.vercel.app/)
+### Visit here:  [View Portfolio](https://nitinsmali.vercel.app/)
 
 <br>
 
@@ -14,7 +14,7 @@
 
 ---
 
-# 👨‍💻 About The Portfolio
+# 👨‍💻 About the Portfolio
 
 This is my personal portfolio website developed to showcase my:
 
