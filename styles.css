@@ -43,8 +43,14 @@ h2 { margin-bottom:0; font-size:clamp(1.65rem, 3.1vw, 2.6rem); line-height:1.2; 
 .project-main h3 { margin-bottom:13px; font-size:clamp(1.25rem, 2vw, 1.7rem); letter-spacing:.1em; }
 .project-main > p:not(.metadata) { max-width:50em; margin-bottom:15px; color:#505b69; font-family:var(--serif); font-size:1.08rem; line-height:1.55; }
 .metadata { margin-bottom:22px!important; color:var(--muted)!important; font-family:var(--sans)!important; font-size:.67rem!important; font-weight:700; line-height:1.55; }
+.project-links { display:flex; flex-wrap:wrap; gap:10px 25px; }
 .project-entry img { width:100%; aspect-ratio:1.42/1; object-fit:cover; border:1px solid var(--line); filter:saturate(.8); transition:filter .25s, transform .25s; }
 .project-entry:hover img { filter:saturate(1); transform:translateY(-4px); }
+.project-preview { width:100%; aspect-ratio:1.42/1; border:1px solid var(--line); }
+.typeflow-preview { display:flex; flex-direction:column; justify-content:space-between; padding:22px; background:#dfe8e2; color:#1d3a33; transition:transform .25s; }
+.typeflow-preview span,.typeflow-preview small { font-size:.62rem; font-weight:700; letter-spacing:.16em; }
+.typeflow-preview strong { font-family:var(--serif); font-size:clamp(1.35rem, 2.5vw, 2rem); font-weight:500; line-height:1.1; }
+.project-entry:hover .typeflow-preview { transform:translateY(-4px); }
 .editorial-grid { display:grid; grid-template-columns:minmax(0, 1.23fr) minmax(245px, .77fr); gap:clamp(48px, 10vw, 145px); padding-top:42px; }
 .prose { max-width:680px; }
 .prose .intro { margin-bottom:24px; color:var(--ink); font-size:clamp(1.42rem, 2.3vw, 2rem); line-height:1.48; }
